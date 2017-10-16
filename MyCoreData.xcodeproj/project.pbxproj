@@ -15,6 +15,8 @@
 		CB0158FB1F9553D5004F7E82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB0158F91F9553D5004F7E82 /* LaunchScreen.storyboard */; };
 		CB0159061F9553D5004F7E82 /* MyCoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0159051F9553D5004F7E82 /* MyCoreDataTests.swift */; };
 		CB0159111F9553D5004F7E82 /* MyCoreDataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0159101F9553D5004F7E82 /* MyCoreDataUITests.swift */; };
+		CB01591F1F955626004F7E82 /* ContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB01591E1F955626004F7E82 /* ContactTableViewController.swift */; };
+		CB0159221F9557C1004F7E82 /* MyCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB0159201F9557C1004F7E82 /* MyCoreData.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		CB01590C1F9553D5004F7E82 /* MyCoreDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCoreDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB0159101F9553D5004F7E82 /* MyCoreDataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCoreDataUITests.swift; sourceTree = "<group>"; };
 		CB0159121F9553D5004F7E82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB01591E1F955626004F7E82 /* ContactTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewController.swift; sourceTree = "<group>"; };
+		CB0159211F9557C1004F7E82 /* MyContacts.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyContacts.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +103,9 @@
 		CB0158EC1F9553D5004F7E82 /* MyCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				CB0159201F9557C1004F7E82 /* MyCoreData.xcdatamodeld */,
 				CB0158ED1F9553D5004F7E82 /* AppDelegate.swift */,
+				CB01591E1F955626004F7E82 /* ContactTableViewController.swift */,
 				CB0158EF1F9553D5004F7E82 /* ViewController.swift */,
 				CB0158F11F9553D5004F7E82 /* Main.storyboard */,
 				CB0158F71F9553D5004F7E82 /* Assets.xcassets */,
@@ -262,9 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB01591F1F955626004F7E82 /* ContactTableViewController.swift in Sources */,
 				CB0158F01F9553D5004F7E82 /* ViewController.swift in Sources */,
 				CB0158EE1F9553D5004F7E82 /* AppDelegate.swift in Sources */,
 				CB0158F61F9553D5004F7E82 /* MyCoreData.xcdatamodeld in Sources */,
+				CB0159221F9557C1004F7E82 /* MyCoreData.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +431,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = edu.RockValleyCollege.MyCoreData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -435,6 +444,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = edu.RockValleyCollege.MyCoreData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -537,6 +547,16 @@
 				CB0158F51F9553D5004F7E82 /* MyCoreData.xcdatamodel */,
 			);
 			currentVersion = CB0158F51F9553D5004F7E82 /* MyCoreData.xcdatamodel */;
+			path = MyCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		CB0159201F9557C1004F7E82 /* MyCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CB0159211F9557C1004F7E82 /* MyContacts.xcdatamodel */,
+			);
+			currentVersion = CB0159211F9557C1004F7E82 /* MyContacts.xcdatamodel */;
 			path = MyCoreData.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
